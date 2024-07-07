@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my protfolio</title>
+    <link rel="stylesheet" href="web.css">
+</head>
+<body>
+    <nav id="dekstop-nav">
+        <div class="logo">VIKAS</div>
+        <div>
+            <ul class="nav-link">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">VIKAS</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggelMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggelMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggelMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggelMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggelMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="seactionpiccontainer">
+            <img src="man.jpg" alt="vas profile">
+        </div>
+        <div class="sectiontext">
+            <p class="sectiontextp1">Hello, I'm</p>
+            <h class="title">VIKAS</h>
+            <p class="sectiontextp2">Frontend Developer</p>
+            <div class="btncontainer">
+                <button class="btn btn-color-2" onclick="window.open('Vikas Rakesh kumar Singh.pdf')">download cv</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Contact</button>
+            </div>
+        </div>
+    </section>
+    <!-- --------ABOUT SECTION--------  -->
+    <section id="about">
+     <p class="sectiontextp1">Get To Know More</p>
+     <h1 class="title">About Me</h1>
+     <div class="sectioncontainer">
+        <div class="seactionpiccontainer">
+            <img src="man.jpg" alt="profile" class="aboutpic">
+        </div>
+        <div class="aboutdetailscontainer">
+            <div class="aboutcontainers">
+                <div class="detailscontainer">
+                    <img src="star.png" alt="Experienceicon" class="icon">
+                    <h3>Experience</h3>
+                    <p>Entry Level <br>Frontend Development</p>
+                </div>
+                <div class="detailscontainer">
+                    <img src="star.png" alt="educationicon" class="icon">
+                    <h3>Education</h3>
+                    <p>B.sc. Computer Science</p>
+                </div>
+            </div>
+            <div class="textconatiner">
+                <p>"I'm a motivated professional with a degree in Computer Science and
+                     experience in Business Process Services at TCS. I'm passionate
+                      about software development and committed to transitioning my
+                       skills to become a developer."
+                </p>
+            </div>
+        </div>
+     </div>
+    </section>
+    <section id="experience">
+        <p class="sectiontextp1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experiencedetailscontainer">
+            <div class="aboutcontainers">
+                <div class="detailscontainer" id="with">
+                    <h2 class="experiencesubtitle">Frontend Development</h2>
+                    <div class="articlecontainer">
+                        <article>
+                            <img src="check.png" alt="Exp" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="check.png" alt="Exp" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Inermidiate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="check.png" alt="Exp" class="icon">
+                            <div>
+                                <h3>Java Script</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="project">
+      <p class="sectiontextp1">Browes My Recent</p>
+      <h1 class="title">Project</h1>
+      <div class="experiencedetailscontainer">
+       <div class="aboutcontainers">
+        <div class="detailscontainer colorcontainer">
+            <div class="articlecontainer">
+                <img src="news web.jpg" alt="project 1" class="projectimg"/>
+            </div>
+            <h2 class="experiencesubtitle projecttitle">News Web</h2>
+            <div class="btncontainer">
+                <button class="btn btn-color-2 projectbtn"
+                onclick="location.href='https://github.com/VikasSingh7700/News-web'">Github</button>
+                <!-- <button class="btn btn-color-2 projectbtn"
+                onclick="location.href='https://github.com'">LiveDemo</button> -->
+            </div>
+        </div>
+        <div class="detailscontainer colorcontainer">
+            <div class="articlecontainer">
+                <img src="todo.jpg" alt="project 2" class="projectimg"/>
+            </div>
+            <h2 class="experiencesubtitle projecttitle">Todo App</h2>
+            <div class="btncontainer">
+                <button class="btn btn-color-2 projectbtn"
+                onclick="location.href='https://github.com/VikasSingh7700/Todo-app'">Github</button>
+                <!-- <button class="btn btn-color-2 projectbtn"
+                onclick="location.href='https://github.com'">LiveDemo</button> -->
+            </div>
+        </div>
+        <div class="detailscontainer colorcontainer">
+            <div class="articlecontainer">
+                <img src="weather.jpg" alt="project 2" class="projectimg"/>
+            </div>
+            <h2 class="experiencesubtitle projecttitle">Weather Display Web</h2>
+            <div class="btncontainer">
+                <button class="btn btn-color-2 projectbtn"
+                onclick="location.href='https://github.com'">In Progress</button>
+                
+            </div>
+        </div>
+    </div>
+      </div>
+    </section>
+    <section id="contact">
+     <p class="sectiontextp1">Get In Touch
+     </p>
+     <h1 class="title">Contact Me</h1>
+     <div class="uppercontainer">
+        <div class="contactinfocontainer">
+            <img src="email.png" alt="email icon" class="iconcontacticon emailicon">
+            <p><a href="mailto:vsingh1552002@gmail.com">Email</a></p>
+        </div>
+        <div class="contactinfocontainer">
+            <img src="linkedin.png" alt="linkden icon" class="iconcontacticon emailicon">
+            <p><a href="https://www.linkedin.com/in/vikas-singh-127441318/">Linkdin</a></p>
+        </div>
+     </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="navlinkscontainer">
+                <ul class="nav-link">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul> 
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Vikas Singh.All Right Reserved</p>
+    </footer>
+    <script src="web.js"></script>
+</body>
+</html>
